@@ -28,6 +28,8 @@ public class EntregaResource {
 	@PostMapping("/cadastrar-entrega")
 	public void saveEntrega(@RequestBody Entrega entrega) {
 		
+		System.out.println(entrega);
+		
 		entregaService.saveEntrega(entrega);
 	}
 	
